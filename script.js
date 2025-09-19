@@ -178,7 +178,7 @@ if (reservationForm) {
       submitBtn.disabled = true;
       
     // For local development
-const response = await fetch('http://localhost:3001/api/reservations', {
+const response = await fetch('/api/reservations', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',

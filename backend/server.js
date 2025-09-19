@@ -246,3 +246,5 @@ app.listen(PORT, () => {
   console.log(`Admin: http://localhost:${PORT}/admin`);
   console.log(`API: http://localhost:${PORT}/api/reservations`);
 });
+
+module.exports = app;
