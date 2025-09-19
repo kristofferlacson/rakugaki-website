@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3001;
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static('../')); // Serve frontend files from parent directory
+app.use(express.static(path.join(__dirname, '../frontend'))); // Serve frontend files
 
 // Store reservations in memory (in production, use a database)
 let reservations = [];
